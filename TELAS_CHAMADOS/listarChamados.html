@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Lista de Chamados</title>
+</head>
+<body>
+  <div class="container ">
+        <div class="row mt-5 ">
+            <div class="col text-center ">
+              <h1>Lista de Chamados</h1>
+            </div>
+        </div>
+        
+    
+      <div class="row card p-3 mt-4">
+          <!-- <form method="post" onsubmit="453()"> -->
+                <div class="container text-center">
+                        
+                </div>
+
+                <table id="tabela" class="table table-white table-striped" >
+                    <thead>
+                      <tr>
+                            <th scope="col">Numero do Chamado</th>
+                            <th scope="col">Solicitante</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Data Inicial</th>
+                            <th scope="col">Status</th>
+                            <!-- <th scope="col">Classificação</th> -->
+                            
+                          </tr>
+                    </thead>
+                       
+                </table>
+
+                  <div class="container text-center mb-2">
+                        <div class="row">
+                          <div class="col">
+                           <input type="number" onblur="buscar(this.value)" id="index">
+                          </div>
+                          <!-- <div class="col">
+                            <button type="submit" class="btn btn-primary ">Voltar</button>
+                          </div> -->
+                          <div class="col">
+                            <button type="submit" class="btn btn-primary ">Voltar</button>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    
+          <!-- </form> -->
+      </div>
+      <div>
+        <table id="sla">
+
+        </table>
+        <form action="">
+          
+          <input type="text" placeholder="Data final" id="data_final">
+
+          <input type="text" placeholder="status" id="status">
+
+          <button type="submit" class="btn btn-dark" id="btnAtt">Atualizar</button>
+
+          <button onclick="deletar()" class="btn btn-dark" >Deletar</button>
+          
+        </form>
+      </div>
+      
+                
+  </div>
+  
+  <script src="js/lista.js"></script>
+        
+    
+</body>
+</html>
